@@ -111,9 +111,9 @@ end
 
 #### drl then 可调用的api
 
-* The call drools.halt() terminates rule execution immediately. This is required for returning control to the point whence the current session was put to work with fireUntilHalt().
-* Methods insert(Object o), update(Object o) and delete(Object o) can be called on drools as well, but due to their frequent use they can be called without the object reference.
-* drools.getWorkingMemory() returns the WorkingMemory object.
-* drools.setFocus( String s) sets the focus to the specified agenda group.
-* drools.getRule().getName(), called from a rule's RHS, returns the name of the rule.
-* drools.getTuple() returns the Tuple that matches the currently executing rule, and drools.getActivation() delivers the corresponding Activation. (These calls are useful for logging and debugging purposes.)
+* The call __drools.halt()__ terminates rule execution immediately. This is required for returning control to the point whence the current session was put to work with __fireUntilHalt()__.
+* Methods __insert(Object o), update(Object o) and delete(Object o)__ can be called on drools as well, but due to their frequent use they can be called without the object reference.
+* __drools.getWorkingMemory()__ returns the WorkingMemory object.
+* __drools.setFocus( String s)__ sets the focus to the specified agenda group.
+* __drools.getRule().getName()__, called from a rule's RHS, returns the name of the rule.
+* __drools.getTuple()__ returns the Tuple that matches the currently executing rule, and drools.getActivation() delivers the corresponding Activation. (These calls are useful for logging and debugging purposes.)
