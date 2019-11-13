@@ -166,7 +166,8 @@ int a[10][20];
 int *b[10];
 
 char **argv
-// argv: pointer to char
+// argv: pointer to char  指向char的指针的指针
+// 参考说明 https://stackoverflow.com/questions/897366/how-do-pointer-to-pointers-work-in-c
 int (*daytab)[13]
 // daytab: pointer to array[13] of int
 int *daytab[13]
